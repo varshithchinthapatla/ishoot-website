@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import founderImg from "../assets/images/about/founder.png";
-import mdImg from "../assets/images/about/md.png";
+import founderImg from "../assets/images/about/founder.PNG";
+import mdImg from "../assets/images/about/md.PNG";
 import { Sparkles, Camera, Video, Heart } from "lucide-react";
 
 export default function About() {
