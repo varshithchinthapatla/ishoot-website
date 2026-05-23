@@ -1,49 +1,56 @@
 import CircularGallery from "../components/CircularGallery";
 
-import cafeReel from "../assets/videos/cafe-reel.mp4";
-import pawanReel from "../assets/videos/pawan-kalyan-reel.mp4";
-import pistaReel from "../assets/videos/pista-house-reel.mp4";
-import politicalReel from "../assets/videos/political-reel.mp4";
-import weddingReel from "../assets/videos/wedding-reel.mp4";
-import ssthamanReel from "../assets/videos/ssthaman-reel.mp4";
-import onemoreReel from "../assets/videos/onemore-reel.mp4";
+
 
 const galleryItems = [
   {
     title: "Cinematic Reels",
     description: "Luxury cinematic edits for brands and creators.",
-    video: cafeReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559117/cafe-reel_wdzsuz.mp4",
   },
+
   {
     title: "Viral Instagram Edits",
     description: "Fast paced edits with trending transitions.",
-    video: pawanReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559104/pawan-kalyan-reel_amaek0.mp4",
   },
+
   {
     title: "Product Commercials",
     description: "Professional product showcase edits.",
-    video: pistaReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559110/pista-house-reel_gty17c.mp4",
   },
+
   {
     title: "Lifestyle Shoots",
     description: "Premium storytelling visuals and reels.",
-    video: politicalReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559113/political-reel_yowahn.mp4",
   },
+
   {
     title: "Travel Reels",
     description: "Smooth cinematic travel experiences.",
-    video: weddingReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559110/wedding-reel_yctfvr.mp4",
   },
+
   {
     title: "Event Highlights",
     description: "Energetic edits for parties and events.",
-    video: ssthamanReel,
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559116/ssthaman-reel_isjaht.mp4",
   },
+
   {
-    title: "Additional Reels",
-    description: "More cinematic edits for various occasions.",
-    video: onemoreReel,
-  }
+    title: "Creative Storytelling",
+    description: "Engaging visual stories with premium edits.",
+    video:
+      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559125/onemore-reel_dlzwde.mp4",
+  },
 ];
 
 
