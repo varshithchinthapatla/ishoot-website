@@ -69,7 +69,7 @@ export default function FeaturedReels() {
               <div className="absolute bottom-0 left-0 p-8">
 
                 <h3 className="text-3xl font-bold">
-                  Viral Reel Edit
+                  Featured Reels
                 </h3>
 
                 <p className="text-zinc-300 mt-3">
