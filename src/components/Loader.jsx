@@ -19,7 +19,7 @@ function Loader() {
         }}
         className="text-5xl md:text-7xl font-black tracking-[0.2em] text-white"
       >
-        <span className="text-red-500">I</span>SHOOTS
+        I_SH<span className="text-red-500">OO</span>TS
       </motion.h1>
 
     </div>
