@@ -24,7 +24,7 @@ export default function FinalCTA() {
         <div className="flex flex-wrap justify-center gap-6 mt-12">
 
           <Link
-            to="/contact"
+            to="/booking"
             className="px-10 py-5 rounded-2xl bg-gradient-to-r from-red-600 to-red-500 text-lg font-semibold hover:scale-105 transition-all duration-500 hover:shadow-[0_0_60px_rgba(239,68,68,0.5)]"
           >
             Book a Shoot

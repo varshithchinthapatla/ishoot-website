@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef, forwardRef } from "react";
+import ReelModal from "./ReelModal";
 
 // Utility for class names
 const cn = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
+
 
 const CircularGallery = forwardRef(
   (
@@ -18,6 +20,8 @@ const CircularGallery = forwardRef(
   ) => {
     const [rotation, setRotation] = useState(0);
     const [isScrolling, setIsScrolling] = useState(false);
+    const [selectedVideo, setSelectedVideo] = useState(null);
+const [isModalOpen, setIsModalOpen] = useState(false);
 
     const scrollTimeoutRef = useRef(null);
     const animationFrameRef = useRef(null);
@@ -107,29 +111,37 @@ const CircularGallery = forwardRef(
         >
           {items.map((item, i) => {
             const itemAngle = i * anglePerItem;
-
             const totalRotation = rotation % 360;
 
-            const relativeAngle =
-              (itemAngle + totalRotation + 360) % 360;
+const relativeAngle =
+  (itemAngle + totalRotation + 360) % 360;
 
-            const normalizedAngle = Math.abs(
-              relativeAngle > 180
-                ? 360 - relativeAngle
-                : relativeAngle
-            );
+const normalizedAngle = Math.abs(
+  relativeAngle > 180
+    ? 360 - relativeAngle
+    : relativeAngle
+);
 
-            const opacity = Math.max(
-              0.3,
-              1 - normalizedAngle / 180
-            );
+const opacity = Math.max(
+  0.3,
+  1 - normalizedAngle / 180
+);
+
+const scale = Math.max(
+  0.75,
+  1 - normalizedAngle / 500
+);
+
+const blur = normalizedAngle / 12;
+
+            
 
             return (
               <div
                 key={i}
                 role="group"
                 aria-label={item.title}
-                className="absolute w-[240px] h-[420px]"
+                className="absolute w-[180px] md:w-[240px] h-[320px] md:h-[420px]"
                 style={{
                   transform: `
                     rotateY(${itemAngle}deg)
@@ -137,23 +149,33 @@ const CircularGallery = forwardRef(
                   `,
                   left: "50%",
                   top: "50%",
-                  marginLeft: "-140px",
-                  marginTop: "-250px",
+                  marginLeft: window.innerWidth < 768 ? "-90px" : "-140px",
+                  
+                  marginTop: window.innerWidth < 768 ? "-180px" : "-250px",
                   opacity: opacity,
-                  transition: "opacity 0.3s linear",
+                  transform: `
+  rotateY(${itemAngle}deg)
+  translateZ(${radius}px)
+  scale(${scale})
+`,
+filter: `blur(${blur}px)`,
+transition: "all 0.3s linear",
                 }}
               >
                 <div className="relative w-full h-full rounded-[30px] overflow-hidden border border-red-500/20 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,0.08)]">
 
-                  {/* VIDEO */}
                   <video
-                    src={item.video}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
+  src={item.video}
+  autoPlay
+  muted
+  loop
+  playsInline
+  onClick={() => {
+    setSelectedVideo(item.video);
+    setIsModalOpen(true);
+  }}
+  className="w-full h-full object-cover cursor-pointer"
+/>
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
@@ -175,6 +197,11 @@ const CircularGallery = forwardRef(
             );
           })}
         </div>
+        <ReelModal
+  isOpen={isModalOpen}
+  onClose={() => setIsModalOpen(false)}
+  video={selectedVideo}
+/>
       </div>
     );
   }

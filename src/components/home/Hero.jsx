@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import heroPhone from "../../assets/images/hero-phone.png";
 
 export default function Hero() {
@@ -40,7 +41,7 @@ export default function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight">
+          <h1 className="text-5xl md:radius={window.innerWidth < 768 ? 220 : 400} lg:text-8xl font-black leading-[0.95] tracking-tight">
 
             Shoot Today.
 
@@ -65,16 +66,17 @@ export default function Hero() {
           {/* Buttons */}
           <div className="mt-10 flex flex-wrap gap-5">
 
-           <button className="group relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-red-600 to-red-800 text-lg font-semibold transition-all duration-500 hover:scale-105 hover:shadow-[0_0_60px_rgba(255,0,0,0.35)]">
-
-  <span className="relative z-10">
-    Book a Shoot
+           <Link
+  to="/booking"
+  className="group relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-red-600 to-red-800 text-lg font-semibold transition-all duration-500 hover:scale-105 hover:shadow-[0_0_60px_rgba(255,0,0,0.35)] inline-block"
+>
+  <span className="relative z-10 text-white">
+    Book Now
   </span>
 
   {/* Shine Effect */}
   <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
-
-</button>
+</Link>
 
             <button className="group relative overflow-hidden px-8 py-4 rounded-2xl border border-red-500/20 bg-white/[0.03] backdrop-blur-md text-lg font-semibold transition-all duration-500 hover:bg-white/10 hover:border-[#C6A972]/40 hover:scale-105">
 

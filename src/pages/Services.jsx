@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Crown,
   Sparkles,
@@ -205,7 +206,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="mt-24 rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-10"
+          className="mt-24 rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-10"
         >
 
           <h2 className="text-3xl font-black mb-8">
@@ -266,10 +267,8 @@ export default function Services() {
             that makes your brand stand out.
           </p>
 
-          <a
-            href="https://www.instagram.com/i_shoots_media?igsh=MTZ3dzF6b3lnMjk4aw=="
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/booking"
             className="inline-flex items-center gap-3 mt-10 px-8 py-4 rounded-2xl bg-gradient-to-r from-red-600 to-red-500 text-lg font-semibold hover:scale-105 transition-all duration-500 hover:shadow-[0_0_60px_rgba(239,68,68,0.45)]"
           >
 
@@ -277,7 +276,7 @@ export default function Services() {
 
             Book Your Shoot
 
-          </a>
+          </Link>
 
         </motion.div>
 

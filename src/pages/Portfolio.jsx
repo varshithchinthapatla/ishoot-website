@@ -1,4 +1,6 @@
 import CircularGallery from "../components/CircularGallery";
+import { useState } from "react";
+import ReelModal from "../components/ReelModal";
 
 
 
@@ -55,6 +57,8 @@ const galleryItems = [
 
 
 function Portfolio() {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="bg-gradient-to-br from-black via-[#140000] to-[#2b0000] text-[#F5F1E8] min-h-screen pt-40">
 
@@ -130,11 +134,18 @@ function Portfolio() {
             <p className="text-zinc-400">
               Weddings, events and brand launches captured cinematically.
             </p>
+
+            
           </div>
 
         </div>
 
       </div>
+      <ReelModal
+  isOpen={isModalOpen}
+  onClose={() => setIsModalOpen(false)}
+  video={selectedVideo}
+/>
 
     </div>
   );

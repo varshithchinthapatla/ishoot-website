@@ -8,12 +8,30 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
+
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import Booking from "./pages/Booking";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import Loader from "./components/Loader";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2500);
+
+  return () => clearTimeout(timer);
+}, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
+    
     <BrowserRouter>
       <ScrollToTop />
 
@@ -27,10 +45,12 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/booking" element={<Booking />} />
         </Routes>
         <Footer />
 
       </div>
+      <FloatingWhatsApp />
 
     </BrowserRouter>
   );
