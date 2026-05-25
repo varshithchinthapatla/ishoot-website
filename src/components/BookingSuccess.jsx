@@ -11,7 +11,7 @@ function BookingSuccess({ isOpen }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-xl"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 md:backdrop-blur-xl backdrop-blur-sm"
         >
 
           <motion.div

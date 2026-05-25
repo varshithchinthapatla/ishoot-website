@@ -23,35 +23,36 @@ const galleryItems = [
     title: "Product Commercials",
     description: "Professional product showcase edits.",
     video:
-      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559110/pista-house-reel_gty17c.mp4",
+      "https://res.cloudinary.com/dt1djywex/video/upload/q_auto,f_auto/v1779559110/pista-house-reel_gty17c.mp4",
   },
 
   {
     title: "Lifestyle Shoots",
     description: "Premium storytelling visuals and reels.",
     video:
-      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559113/political-reel_yowahn.mp4",
+      "https://res.cloudinary.com/dt1djywex/video/upload/q_auto,f_auto/v1779559113/political-reel_yowahn.mp4",
+      
   },
 
   {
     title: "Travel Reels",
     description: "Smooth cinematic travel experiences.",
     video:
-      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559110/wedding-reel_yctfvr.mp4",
+      "https://res.cloudinary.com/dt1djywex/video/upload/q_auto,f_auto/v1779559110/wedding-reel_yctfvr.mp4",
   },
 
   {
     title: "Event Highlights",
     description: "Energetic edits for parties and events.",
     video:
-      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559116/ssthaman-reel_isjaht.mp4",
+      "https://res.cloudinary.com/dt1djywex/video/upload/q_auto,f_auto/v1779559116/ssthaman-reel_isjaht.mp4",
   },
 
   {
     title: "Creative Storytelling",
     description: "Engaging visual stories with premium edits.",
     video:
-      "https://res.cloudinary.com/dt1djywex/video/upload/v1779559125/onemore-reel_dlzwde.mp4",
+      "https://res.cloudinary.com/dt1djywex/video/upload/q_auto,f_auto/v1779559125/onemore-reel_dlzwde.mp4",
   },
 ];
 
@@ -65,7 +66,9 @@ const [isModalOpen, setIsModalOpen] = useState(false);
       <CircularGallery
         items={galleryItems}
         radius={400}
-        autoRotateSpeed={0.03}
+        autoRotateSpeed={
+  window.innerWidth < 768 ? 0.008 : 0.03
+}
       />
       <div className="flex justify-center mt-10 mb-10">
 
@@ -106,7 +109,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         {/* SERVICES */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] backdrop-blur-xl">
+          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">
               Cinematic Reels
             </h3>
@@ -116,7 +119,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             </p>
           </div>
 
-          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] backdrop-blur-xl">
+          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">
               Instagram Content
             </h3>
@@ -126,7 +129,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             </p>
           </div>
 
-          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] backdrop-blur-xl">
+          <div className="p-8 rounded-3xl border border-red-500/20 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">
               Event Highlights
             </h3>

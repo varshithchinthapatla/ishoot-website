@@ -12,7 +12,7 @@ const CircularGallery = forwardRef(
     {
       items,
       className,
-      radius = 420,
+      radius = window.innerWidth < 768 ? 180 : 420,
       autoRotateSpeed = 0.02,
       ...props
     },
@@ -98,7 +98,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
           className
         )}
         style={{
-          perspective: "2000px",
+          perspective: "1200px",
         }}
         {...props}
       >
@@ -132,7 +132,10 @@ const scale = Math.max(
   1 - normalizedAngle / 500
 );
 
-const blur = normalizedAngle / 12;
+const blur =
+  window.innerWidth < 768
+    ? 0
+    : normalizedAngle / 12;
 
             
 
@@ -162,7 +165,7 @@ filter: `blur(${blur}px)`,
 transition: "all 0.3s linear",
                 }}
               >
-                <div className="relative w-full h-full rounded-[30px] overflow-hidden border border-red-500/20 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_40px_rgba(255,255,255,0.08)]">
+                <div className="relative w-full h-full rounded-[30px] overflow-hidden border border-red-500/20 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm shadow-[0_0_40px_rgba(255,255,255,0.08)]">
 
                   <video
   src={item.video}

@@ -206,7 +206,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="mt-24 rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-10"
+          className="mt-24 rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-7 md:p-10"
         >
 
           <h2 className="text-3xl font-black mb-8">

@@ -124,7 +124,7 @@ setTimeout(() => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    className="relative rounded-[35px] border border-red-500/20 bg-black/70 backdrop-blur-xl overflow-hidden p-10 group"
+    className="relative rounded-[35px] border border-red-500/20 bg-black/70 md:backdrop-blur-xl backdrop-blur-sm overflow-hidden p-10 group"
   >
 
     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-red-500/10 to-transparent" />
@@ -172,7 +172,7 @@ setTimeout(() => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.2 }}
-    className="relative rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden p-10 group"
+    className="relative rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm overflow-hidden p-10 group"
   >
 
     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-red-500/10 to-transparent" />
@@ -218,7 +218,7 @@ setTimeout(() => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.4 }}
-    className="relative rounded-[35px] border border-red-500/30 bg-red-950/20 backdrop-blur-xl overflow-hidden p-10 group"
+    className="relative rounded-[35px] border border-red-500/30 bg-red-950/20 md:backdrop-blur-xl backdrop-blur-sm overflow-hidden p-10 group"
   >
 
     <div className="absolute top-6 right-6 bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
@@ -268,7 +268,7 @@ setTimeout(() => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.6 }}
-    className="relative rounded-[35px] border border-white/10 bg-black/80 backdrop-blur-xl overflow-hidden p-10 group"
+    className="relative rounded-[35px] border border-white/10 bg-black/80 md:backdrop-blur-xl backdrop-blur-sm overflow-hidden p-10 group"
   >
 
     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-b from-red-500/10 to-transparent" />
@@ -319,7 +319,7 @@ setTimeout(() => {
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    className="rounded-[40px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 md:p-16"
+    className="rounded-[40px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-6 md:p-16"
   >
 
     <h2 className="text-5xl md:text-6xl font-black text-center">

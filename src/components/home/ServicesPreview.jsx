@@ -45,7 +45,7 @@ export default function ServicesPreview() {
                 scale: 1.04,
                 y: -5,
               }}
-              className="rounded-[30px] border border-white/10 bg-white/[0.03] p-7 md:p-10 text-center backdrop-blur-xl"
+              className="rounded-[30px] border border-white/10 bg-white/[0.03] p-7 md:p-10 text-center md:backdrop-blur-xl backdrop-blur-sm"
             >
 
               <h3 className="text-2xl font-bold">

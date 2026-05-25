@@ -59,7 +59,7 @@ export default function Contact() {
           >
 
             {/* Card */}
-            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8">
+            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-8">
 
               <div className="flex items-center gap-4">
 
@@ -82,7 +82,7 @@ export default function Contact() {
             </div>
 
             {/* Card */}
-            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8">
+            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-8">
 
               <div className="flex items-center gap-4">
 
@@ -105,7 +105,7 @@ export default function Contact() {
             </div>
 
             {/* Card */}
-            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8">
+            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-8">
 
               <div className="flex items-center gap-4">
 
@@ -133,7 +133,7 @@ export default function Contact() {
             </div>
 
             {/* Card */}
-            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8">
+            <div className="rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-8">
 
               <div className="flex items-center gap-4">
 
@@ -162,7 +162,7 @@ export default function Contact() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="rounded-[40px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-8 md:p-10"
+            className="rounded-[40px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-8 md:p-10"
           >
 
             <h2 className="text-4xl font-black mb-8">

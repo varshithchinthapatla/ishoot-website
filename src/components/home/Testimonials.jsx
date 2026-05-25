@@ -56,7 +56,7 @@ export default function Testimonials() {
               whileHover={{
                 scale: 1.03,
               }}
-              className="rounded-[35px] border border-white/10 bg-white/[0.03] p-10 backdrop-blur-xl"
+              className="rounded-[35px] border border-white/10 bg-white/[0.03] p-10 md:backdrop-blur-xl backdrop-blur-sm"
             >
 
               <p className="text-zinc-300 text-lg leading-relaxed">

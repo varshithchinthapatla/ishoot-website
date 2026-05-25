@@ -52,7 +52,7 @@ export default function FeaturedReels() {
                 y: -10,
                 scale: 1.02,
               }}
-              className="group relative overflow-hidden rounded-[35px] border border-white/10 bg-white/[0.03] backdrop-blur-xl"
+              className="group relative overflow-hidden rounded-[35px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm"
             >
 
               <video

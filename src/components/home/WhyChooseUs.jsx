@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
                   y: -8,
                   scale: 1.03,
                 }}
-                className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl"
+                className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-xl backdrop-blur-sm"
               >
 
                 <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center mb-6">

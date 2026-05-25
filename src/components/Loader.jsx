@@ -5,7 +5,7 @@ function Loader() {
     <div className="fixed inset-0 z-[9999] bg-black flex items-center justify-center overflow-hidden">
 
       {/* Glow */}
-      <div className="absolute w-[400px] h-[400px] bg-red-600/20 blur-[150px] rounded-full" />
+      <div className="absolute w-[400px] h-[400px] bg-red-600/20 blur-[80px] rounded-full" />
 
       {/* Logo Animation */}
       <motion.h1

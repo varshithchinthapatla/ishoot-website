@@ -61,7 +61,7 @@ export default function About() {
   {/* Red Glow */}
   <div className="absolute w-[350px] h-[350px] bg-red-600/25 blur-[120px] rounded-full"></div>
 
-  <div className="relative rounded-[35px] overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-xl group max-w-[420px] shadow-[0_0_60px_rgba(255,0,0,0.18)]">
+  <div className="relative rounded-[35px] overflow-hidden border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm group max-w-[420px] shadow-[0_0_60px_rgba(255,0,0,0.18)]">
 
     {/* Hover Overlay */}
     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-red-500/10 to-transparent z-10" />
@@ -121,7 +121,7 @@ export default function About() {
   {/* Red Glow */}
   <div className="absolute w-[350px] h-[350px] bg-red-600/25 blur-[120px] rounded-full"></div>
 
-  <div className="relative rounded-[35px] overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-xl group max-w-[420px] shadow-[0_0_60px_rgba(255,0,0,0.18)]">
+  <div className="relative rounded-[35px] overflow-hidden border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm group max-w-[420px] shadow-[0_0_60px_rgba(255,0,0,0.18)]">
 
     {/* Hover Overlay */}
     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-red-500/10 to-transparent z-10" />
@@ -176,7 +176,7 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mt-28 rounded-[40px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-6 md:p-16"
+          className="mt-28 rounded-[40px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-6 md:p-16"
         >
 
           <div className="flex items-center gap-3 mb-8">
@@ -215,7 +215,7 @@ export default function About() {
         {/* VISION */}
         <div className="grid md:grid-cols-3 gap-8 mt-24">
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-xl backdrop-blur-sm">
             <Camera className="text-red-500 mb-6" size={40} />
 
             <h3 className="text-2xl font-black mb-4">
@@ -228,7 +228,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-xl backdrop-blur-sm">
             <Video className="text-red-500 mb-6" size={40} />
 
             <h3 className="text-2xl font-black mb-4">
@@ -241,7 +241,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-xl backdrop-blur-sm">
             <Heart className="text-red-500 mb-6" size={40} />
 
             <h3 className="text-2xl font-black mb-4">
@@ -259,7 +259,7 @@ export default function About() {
         {/* STATS */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-24">
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center md:backdrop-blur-xl backdrop-blur-sm">
             <h2 className="text-5xl font-black text-red-500">
               500+
             </h2>
@@ -269,7 +269,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center md:backdrop-blur-xl backdrop-blur-sm">
             <h2 className="text-5xl font-black text-red-500">
               50M+
             </h2>
@@ -279,7 +279,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center md:backdrop-blur-xl backdrop-blur-sm">
             <h2 className="text-5xl font-black text-red-500">
               100+
             </h2>
@@ -289,7 +289,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center backdrop-blur-xl">
+          <div className="rounded-[30px] border border-white/10 bg-white/[0.03] p-8 text-center md:backdrop-blur-xl backdrop-blur-sm">
             <h2 className="text-5xl font-black text-red-500">
               10 Min
             </h2>

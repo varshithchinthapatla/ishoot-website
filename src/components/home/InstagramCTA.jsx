@@ -4,7 +4,7 @@ export default function InstagramCTA() {
 
       <div className="absolute inset-0 bg-gradient-to-r from-red-600/20 to-transparent blur-[160px]" />
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center rounded-[40px] border border-white/10 bg-white/[0.03] backdrop-blur-xl p-16">
+      <div className="relative z-10 max-w-5xl mx-auto text-center rounded-[40px] border border-white/10 bg-white/[0.03] md:backdrop-blur-xl backdrop-blur-sm p-16">
 
         <h2 className="text-5xl md:text-7xl font-black leading-tight">
 
